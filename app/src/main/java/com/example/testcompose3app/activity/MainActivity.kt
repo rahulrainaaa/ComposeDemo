@@ -1,4 +1,4 @@
-package com.example.testcompose3app
+package com.example.testcompose3app.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

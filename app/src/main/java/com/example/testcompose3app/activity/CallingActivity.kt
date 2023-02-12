@@ -1,4 +1,4 @@
-package com.example.testcompose3app
+package com.example.testcompose3app.activity
 
 import android.app.Application
 import android.content.Intent
