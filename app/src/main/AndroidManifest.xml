@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,18 +19,20 @@
             android:theme="@style/Theme.TestCompose3App">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="testing.app"
                     android:scheme="myapp" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".CallingActivity"
             android:exported="true"
-            android:theme="@style/Theme.TestCompose3App"
             android:label="Calling deeplink"
-            android:name=".CallingActivity">
+            android:theme="@style/Theme.TestCompose3App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

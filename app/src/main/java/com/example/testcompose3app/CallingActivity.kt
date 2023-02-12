@@ -9,11 +9,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import com.example.testcompose3app.ui.theme.TestCompose3AppTheme
+import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class MyApp : Application()
 
+@AndroidEntryPoint
 class CallingActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
